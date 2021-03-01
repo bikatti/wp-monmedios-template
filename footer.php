@@ -12,7 +12,7 @@
         </div><!-- #content -->
 
         <?php 
-            if ( is_page('mercurio') ) { 
+            if ( is_page('23') ) { 
                 get_template_part( 'template-parts/contact/pop-contact' );
 
                 get_template_part( 'template-parts/footer/up-bar' );

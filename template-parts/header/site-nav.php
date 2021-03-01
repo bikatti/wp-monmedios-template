@@ -9,7 +9,7 @@
 
 <nav class="m-header__nav">
     <?php
-        if ( is_page('mercurio') ) {
+        if ( is_page('23') ) {
             if ( has_nav_menu( 'top_menu' ) ) {
                 wp_nav_menu([
                 'theme_location'  => 'top_menu',
