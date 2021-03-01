@@ -1,0 +1,496 @@
+/* ------------------------------------------
+ # CSS Costum for previsualition on gutenberg 
+ -------------------------------------------- */
+
+/* vars */
+:root {
+    --font1: 'Roboto', sans-serif;
+    --font2: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --title: 44px;
+
+    --color-primary: #2e279d;
+    --color-secondary: #ffd400;
+    --color-alert: #d90368;
+    --color-calm: #eadeda;
+    --color-happy: #68b0ab;
+
+    --color-lightin: #fefefe;
+    --color-grey: #dddce0;
+    --color-darkgrey: #bab7c1;
+    --color-dark: #59585a;
+    --color-black: #464547;
+}
+
+.edit-post-visual-editor.editor-styles-wrapper {
+    padding: 0;
+}
+
+
+/* Set global width for all Gutenberg blocks - this should be the same as your article width */
+.wp-block {
+    max-width: 100%;
+  }
+.wp-block-group__inner-container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+ 
+/* Colors */
+.-lightin {
+    color: var(--color-lightin) !important;
+}
+
+/* Main typography elements */
+ 
+ /* Sans Serif font for headers */
+ .has-medium-font-size,
+ .editor-block-list__layout .editor-block-list__block p,
+ .rich-text.block-editor-rich-text__editable.wp-block-paragraph,
+ .block-editor-block-list__layout.is-root-container,
+ ul, ol {
+   font-family: var(--font2);
+ }
+
+ .editor-block-list__layout .editor-block-list__block,
+ .editor-post-title__block .editor-post-title__input,
+ h1.rich-text.block-editor-rich-text__editable,
+ h2.rich-text.block-editor-rich-text__editable,
+ h3.rich-text.block-editor-rich-text__editable,
+ h4.rich-text.block-editor-rich-text__editable,
+ h5.rich-text.block-editor-rich-text__editable,
+ h6.rich-text.block-editor-rich-text__editable,
+ #post-title-0,
+ table {
+    color: var(--color-black);
+    font-family: var(--font1);
+    font-weight: 800;
+ }
+ 
+ 
+/* Monospace font for code */
+pre, code, kbd, tt, var {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+ 
+ /* Format image captions */
+ .wp-block-image figcaption,
+ figcaption {
+     margin-top: 0;
+     color: #666;
+     font-size: 0.9rem;
+     text-align: center;
+ }
+ 
+ /*--------------------------------------------------------------
+ # Typography
+ --------------------------------------------------------------*/
+#post-title-0 {
+    letter-spacing: -1px;
+    padding: 5px 0;
+    font-weight: 700;
+    border-bottom: 1px solid var(--color-grey);
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    #post-title-0 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #post-title-0 {
+        padding-top: 10px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+h1.rich-text.block-editor-rich-text__editable {
+    font-size: var(--title);
+    line-height: 1.35;
+    margin: 0;
+    /* margin-bottom: 20px; */
+}
+
+h2.rich-text.block-editor-rich-text__editable {
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3.rich-text.block-editor-rich-text__editable {
+    /* margin-top: 0; */
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+h4.rich-text.block-editor-rich-text__editable {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 28px;
+}
+
+h5.rich-text.block-editor-rich-text__editable {
+    font-size: 24px;
+}
+
+h6.rich-text.block-editor-rich-text__editable {
+    font-size: 20px;
+}
+
+p.rich-text.block-editor-rich-text__editable {
+    font-family: var(--font2);
+    font-size: 16px;
+    line-height: 1.3;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--color-dark);
+}
+
+p.rich-text.block-editor-rich-text__editable:nth-last-of-type(1) {
+    padding-bottom: 0;
+}
+
+
+/* Format code blocks */
+pre {
+    background: #f3f3f3;
+    border-radius: 4px;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+    white-space: pre-wrap;
+    max-height: 650px;
+}
+
+/* Format inline code blocks */
+code, kbd, tt, var {
+    background: #f3f3f3;
+    padding: 2px 7px 2px 7px;
+    border-radius: 4px;
+}
+
+/* Format blockquotes */
+.wp-block-quote {
+    margin-left: 2em;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: .4rem .8rem;
+    border-left: .35rem solid #1565C0;
+    color: #666;
+    font-style: italic;
+}
+
+/* Format the cite text in blockquotes */
+dfn, cite, i {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* Links & buttons */
+
+a,
+a:visited,
+article a,
+p.feature-credit a,
+p.feature-credit a:visited,
+.menu-items a {
+    color: #1565C0;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+article a:hover,
+article a:focus,
+article a:active,
+p.feature-credit a:hover,
+p.feature-credit a:active,
+.menu-items a:hover,
+.menu-items a:active {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+/* Standard WordPress button block */
+
+/* ------------------------------------
+# Botón
+-------------------------------------- */
+.rich-text.block-editor-rich-text__editable.wp-block-button__link,
+.rich-text.block-editor-rich-text__editable.wp-block-button__link:visited {
+    background: var(--color-alert);
+    color: var(--color-lightin);
+    padding: 10px 50px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 25px !important;
+}
+
+.rich-text.block-editor-rich-text__editable.wp-block-button__link:hover,
+.rich-text.block-editor-rich-text__editable.wp-block-button__link:focus,
+.rich-text.block-editor-rich-text__editable.wp-block-button__link:active {
+    background: #333;
+}
+.block-editor-block-list__block {
+    margin: 0;
+}
+
+
+.block-editor-block-list__layout .wp-block {
+    margin-top: 23px;
+}
+
+.wp-block-group__inner-container.block-editor-block-list__layout .wp-block {
+    max-width: 100%;
+    margin: 0;
+}
+
+.wp-block-group__inner-container .wp-block-group__inner-container {
+    max-width: 100%;
+}
+
+/* ------------------------------------
+ # Grid, Container y paddings
+ -------------------------------------- */
+/* .-container,  */
+.editor-post-title__block {
+    max-width: 75% !important;
+    margin: 0 auto;
+}
+
+.-p0 {
+    padding: 0 !important;
+}
+
+.-p0-top {
+    padding-top: 0 !important;
+}
+
+.-p0-bottom {
+    padding-bottom: 0 !important;
+}
+
+.-p5, .m-firstSteps__title, .m-sixBenefits__title,
+.m-contentImgs__title, .m-plataformHelp__title,
+.m-mercurioMag__title, .m-plataform__title,
+.m-usHelp h4 {
+    padding-bottom: 5px !important;
+}
+
+.-hide {
+    display: none;
+}
+
+.editor-styles-wrapper .block-editor-block-list__block.wp-block-column:not(:first-child) {
+    margin-left: 60px;
+}
+
+.editor-styles-wrapper .m-plataform__item .block-editor-block-list__block.wp-block-column:not(:first-child) {
+    margin-left: 20px;
+}
+
+/* ------------------------------------
+ # Primer bloque, Hero
+ -------------------------------------- */
+.m-hero__container {
+    background: var(--color-primary);
+    padding-top: 105px;
+    padding-bottom: 95px;
+}
+.m-hero__title {
+    padding-bottom: 20px;
+}
+.m-hero__subtitle {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+}
+
+/* -------------------------------------
+ # Segundo bloque, First Steps 
+ --------------------------------------- */
+.m-firstSteps {
+    padding-top: 75px;
+    padding-bottom: 90px;
+}
+
+.m-firstSteps__title {
+    padding-top: 0 !important;
+}
+
+.m-firstSteps__subtitle {
+    padding: 0 !important;
+    margin-bottom: 45px !important;
+    max-width: 830px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.m-firstSteps__block {
+    background: var(--color-calm);
+    padding: 2px 40px;
+    margin-bottom: 90px !important;
+}
+.m-firstSteps__block:last-child {
+    margin-bottom: 0 !important;
+}
+.m-firstSteps__text {
+    flex-grow: 1.3 !important;
+}
+.m-firstSteps__blockTitle {
+    padding-bottom: 25px !important;
+}
+
+/* -------------------------------------
+ # Tercero bloque, Seis beneficios de la revista y Imgs
+ --------------------------------------- */
+.m-sixBenefits {
+    margin-top: 90px !important;
+    margin-bottom: 100px !important;
+}
+.m-sixBenefits__title {
+    line-height: 1.4;
+    padding-bottom: 50px !important;
+}
+.m-sixBenefits_item {
+    margin-bottom: 90px !important;
+}
+.m-sixBenefits_item:last-child {
+    margin-bottom: 0 !important;
+}
+.m-sixBenefits_itemTitle {
+    padding-bottom: 15px;
+}
+
+/* -------------------------------------
+ # Cuarto bloque, Crear contenidos y Imgs
+ --------------------------------------- */
+.m-contentImgs {
+    background: var(--color-calm);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.m-contentImgs__title {
+    padding-bottom: 50px !important;
+}
+
+/* -------------------------------------
+ # Quinto bloque, Nosotros te ayudamos
+ --------------------------------------- */
+.m-usHelp {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.m-usHelp__group {
+    padding-bottom: 65px !important;
+}
+.m-usHelp__group p {
+    max-width: 840px !important;
+    margin: 0 auto !important;
+}
+.m-usHelp__title {
+    padding-top: 0 !important;
+}
+.m-usHelp h4 {
+    padding-top: 28px;
+}
+.m-usHelp p {
+    padding: 0 !important;
+}
+
+/* -------------------------------------
+ # Sexto bloque, la plataforma, imgs y feature
+ --------------------------------------- */
+.m-plataform {
+    background: rgba(104, 176, 171, 0.3);
+    padding-top: 90px;
+    padding-bottom: 90px;
+} 
+.m-plataform__subtitle {
+    padding-bottom: 45px !important;
+    max-width: 840px !important;
+    margin: 0 auto !important;
+}
+.m-plataform__item {
+    padding-bottom: 60px;
+}
+.m-plataform__item:nth-last-of-type(1) {
+    padding-bottom: 0 !important;
+}
+.m-plataform__item h3 {
+    line-height: 1;
+    padding-bottom: 15px;
+}
+
+/* -------------------------------------
+ # Septimo bloque, Cómo te ayuda la plataforma
+ --------------------------------------- */
+.m-plataformHelp {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-top: 0 !important;
+}
+.m-plataformHelp__subtitle {
+    font-size: 18px;
+    max-width: 830px !important;
+    margin: 0 auto !important;
+    padding-bottom: 50px !important;
+}
+.m-plataformHelp__group {
+    margin-bottom: 70px !important;
+}
+.m-plataformHelp__group:last-child {
+    margin-bottom: 0 !important;
+}
+.m-plataformHelp__item figure {
+    padding-bottom: 25px;
+}
+.m-plataformHelp__item figure div {
+    background: rgba(234, 222, 218, .5);
+    border-radius: 4px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
+}
+.m-plataformHelp__item h4 {
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------------
+ # Octavo bloque, Cómo te ayuda la plataforma
+ --------------------------------------- */
+.m-mercurioMag {
+    background: rgba(255, 212, 0, .7);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin: 0 !important;
+}
+.m-mercurioMag__title {
+    font-size: 45px !important;
+}
+.m-mercurioMag__subtitle {
+    font-size: 18px !important;
+    max-width: 830px !important;
+    margin: 0 auto !important;
+}
+.m-mercurioMag__video {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    margin-top: 40px !important;
+}
