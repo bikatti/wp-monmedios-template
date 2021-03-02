@@ -1113,8 +1113,8 @@ li.menu-item {
 }
 @media only screen and (min-width: 576px) {
   .m-hero__container {
-    padding-top: calc(60px + 15px);
-    padding-bottom: calc(90px + 5px);
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 }
 .m-hero__container .wp-block-column:not(:first-child) {
@@ -1122,7 +1122,13 @@ li.menu-item {
 }
 
 .m-hero__title {
+  line-height: 1.2;
   padding-bottom: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .m-hero__title {
+    line-height: 1.15;
+  }
 }
 
 .m-hero__subtitle {
@@ -1732,6 +1738,7 @@ li.menu-item {
 .m-footer__firm p {
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 15px;
 }
 .m-footer__firm::after {
   content: url("assets/img/icons/monlogo.png");
