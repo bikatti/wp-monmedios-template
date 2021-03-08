@@ -1,0 +1,34 @@
+/* ------------------------------------
+ # Primer bloque, Hero
+ -------------------------------------- */
+
+.m-hero__container {
+    background: $color-primary;
+    padding-top: $spaceSuperXl;
+    padding-bottom: $spaceSuperXl;
+
+    &.-frontPage {
+        background-color: $color-happy;
+    }
+
+    @include mediaQueriesMinSm {
+        padding-top: $spaceSuperXl;
+        padding-bottom: $spaceXl;
+    }
+
+    .wp-block-column:not(:first-child) {
+        margin-top: $spaceMd;
+    }
+}
+.m-hero__title {
+    line-height: 1.2;
+    padding-bottom: $spaceRg;
+
+    @include mediaQueriesMinSm {
+        line-height: 1.15;
+    }
+}
+.m-hero__subtitle {
+    font-size: $fontSuperXxs;
+    line-height: 1.5 !important;
+}

@@ -1,0 +1,58 @@
+/* -------------------------------------
+ # Septimo bloque, Cómo te ayuda la plataforma
+ --------------------------------------- */
+.m-plataformHelp {
+    padding-top: $spaceSuperXl;
+    padding-bottom: $spaceMega;
+
+    @include mediaQueriesMinMd {
+        padding-top: $spaceMega;
+        padding-bottom: $spaceMega;
+    }
+}
+.m-plataformHelp__subtitle {
+    font-size: $fontP;
+    max-width: 830px;
+    margin: 0 auto;
+    padding-bottom: $spaceBg;
+
+    @include mediaQueriesMinMd {
+        padding-bottom: $spaceXl;
+        font-size: $fontSuperXxs;
+    }
+}
+.m-plataformHelp__group {
+    margin-bottom: $spaceSuperXl;
+    &:nth-last-of-type(1) {
+        margin-bottom: 0 !important;
+    }
+
+    @include mediaQueriesMinMd {
+        margin-bottom: calc(#{$spaceXl} + #{$spaceRg});
+    }
+}
+
+.m-plataformHelp__item {
+    @include mediaQueriesMd {
+        &:first-child {
+            margin-bottom: $spaceSuperXl;
+        }
+    }
+}
+
+.m-plataformHelp__item figure {
+    padding-bottom: $space25;
+
+    & img {
+        background: rgba($color-calm, .5);
+        border-radius: 4px;
+        box-shadow: $shadow;
+    }
+}
+.m-plataformHelp__item h4 {
+    padding-bottom: $spaceSm;
+
+    @include mediaQueriesMinMd {
+        padding-bottom: $spaceXs;
+    }
+}

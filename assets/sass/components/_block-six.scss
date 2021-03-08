@@ -1,0 +1,68 @@
+/* -------------------------------------
+ # Sexto bloque, la plataforma, imgs y feature
+ --------------------------------------- */
+.m-plataform {
+    background: rgba($color-happy, 0.3);
+    padding-top: $spaceSuperXl;
+    padding-bottom: $spaceSuperXl;
+
+    @include mediaQueriesMinMd {
+        padding-top: $spaceMega;
+        padding-bottom: $spaceMega;
+    }
+}
+
+.m-plataform__title {
+    @include mediaQueriesMd {
+        line-height: 1.2;
+    }
+}
+
+.m-plataform__subtitle {
+    padding-bottom: $spaceBg !important;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.m-plataform__item {
+    padding-bottom: $spaceMega;
+
+    &:nth-last-of-type(1) {
+        padding-bottom: 0 !important;
+    }
+
+    @include mediaQueriesMd {
+        &:nth-child(3) {
+            .wp-block-column:nth-child(2) {
+                order: -1;
+                margin-bottom: $spaceSm;
+            }
+        }
+
+        &:nth-child(5) {
+            .wp-block-column:nth-child(2) {
+                order: -1;
+                margin-bottom: $spaceSm;
+            }
+        }
+
+        &:nth-child(7) {
+            .wp-block-column:nth-child(2) {
+                order: -1;
+                margin-bottom: $spaceSm;
+            }
+        }
+    }
+
+    @include mediaQueriesMinMd {
+        padding-bottom: $spaceXl;
+    }
+}
+
+.m-plataform__item h3 {
+    padding-bottom: $spaceSm;
+
+    @include mediaQueriesMd {
+        padding-top: $spaceSm;
+    }
+}

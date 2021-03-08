@@ -1,0 +1,43 @@
+/*
+Theme name:		Monmedios Landing
+Theme URI:      https://monlogo.co/
+Author:         Monlogo
+Author URI:     https://monlogo.co
+Requires PHP:   7.4.0
+Description:    Sitio web para monmedios de landing page
+Version:        1.1.1
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:    odin
+AMP: 			false
+Requires License:     no
+Tags: monmedios, landing page
+*/
+
+// lib
+@import "lib/var";
+@import "lib/mixin";
+
+// layout
+@import "layout/bootstrap_reboot";
+@import "layout/site";
+@import "layout/grid";
+
+// base
+@import "base/typography";
+@import "base/links";
+@import "base/buttons";
+@import "base/icons";
+
+// components
+@import "components/header";
+@import "components/hero";
+// @import "components/block-two";
+@import "components/block-three";
+@import "components/block-four";
+@import "components/block-five";
+@import "components/block-six";
+@import "components/block-seven";
+@import "components/block-eight";
+@import "components/contact";
+@import "components/footer";

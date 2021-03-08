@@ -1,0 +1,52 @@
+/* -------------------------------------
+ # Octavo bloque, Cómo te ayuda la plataforma
+ --------------------------------------- */
+.m-mercurioMag {
+    background: rgba($color-secondary, .7);
+    padding-top: $spaceSuperXl;
+    padding-bottom: $spaceMega;
+
+    .wp-block-columns {
+        margin-bottom: 0;
+    }
+
+    @include mediaQueriesMd {
+        .wp-block-button a.wp-block-button__link {
+            margin-top: $spaceSm;
+        }
+    }
+
+    @include mediaQueriesMinMd {
+        padding-top: $spaceMega;
+        padding-bottom: $spaceMega;
+    }
+}
+.m-mercurioMag__title {
+    font-size: $fontMd;
+    padding-bottom: $spaceSm !important;
+}
+.m-mercurioMag__subtitle {
+    max-width: 830px;
+    margin: 0 auto;
+}
+.m-mercurioMag__video {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: $spaceBg;
+
+    .wp-block-embed__wrapper::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+    & iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

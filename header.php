@@ -20,7 +20,7 @@
         <?php wp_head(  ); ?>
     </head>
     <?php 
-    if ( is_front_page( ) ) {
+    if ( is_front_page( ) || is_404() ) {
         echo '<body class="theBody -frontPage" id="theBody">';
     } else {
         echo '<body class="theBody" id="theBody">';

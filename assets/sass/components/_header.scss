@@ -1,0 +1,154 @@
+/* ------------------------------------
+ # Header, menú principal del landing page
+ -------------------------------------- */
+
+.o-header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 35% 60px;
+    background: $color-primary;
+    position: sticky;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: $child;
+
+    &.-frontPage {
+        background: $color-happy;
+    }
+    
+    .-headerFixed & {
+        transition: background .3s ease;
+        background: $color-lightin;
+    }
+
+    @include mediaQueriesLg {
+        padding-top: $spaceSm;
+        padding-bottom: $spaceSm;
+    }
+
+    @include mediaQueriesMinSm {
+        grid-template-columns: 28% 55% 60px;
+    }
+    
+    @include mediaQueriesMinLg {
+        grid-template-columns: 15% $spaceMega calc(100% - 450px);
+    }
+
+}
+
+.m-header__brand {
+    display: flex;
+    align-items: center;
+
+    
+    img {
+        width: 100%;
+    }
+    
+    @include mediaQueriesMinLg {
+        grid-column: 1/2;
+
+        .-frontPage & {
+            padding: 32px 0;
+        }
+    }
+}
+
+.m-header__nav {
+    grid-column: 3/3;
+    
+    @include mediaQueriesMinLg {
+        display: flex;
+        justify-content: flex-end;
+        padding: $space25 0;
+    }
+    
+}
+.m-header__lenguage {
+    position: relative;
+    top: -13px;
+    left: 2px;
+
+    @include mediaQueriesMinSm {
+        top: -10px;
+    }
+
+    @include mediaQueriesMinMd {
+        top: -4px;
+    }
+}
+
+.m-header__toggle {
+    max-width: 60px;
+    width: 100%;
+}
+
+.a-lenguage__icon {
+    position: absolute;
+    left: 25px;
+    fill: $color-lightin;
+
+    .-headerFixed & {
+        fill: $color-primary;
+    }
+
+    
+    @include mediaQueriesMd {
+        width: 22px;
+        height: 22px;
+    }
+    
+    @include mediaQueries0 {
+        width: 20px;
+        height: 20px;
+    }
+
+    @include mediaQueriesMinLg {
+        width: 28px;
+        height: 28px;
+    }
+}
+.a-lenguage__lable {
+    position: absolute;
+    color: $color-primary;
+    padding: 2px 11px;
+    background: $color-secondary;
+    border-radius: $space25;
+    font-size: 9px;
+    top: -4px;
+    left: 2px;
+    z-index: $guest;
+
+    @include mediaQueries0 {
+        padding: 2px 9px;
+        left: 5px;
+    }
+
+    @include mediaQueriesMinMd {
+        font-size: 11px;
+    }
+}
+
+
+.m-header__menu {
+    display: none;
+
+    @include mediaQueriesMinLg {
+        display: flex;
+    }
+}
+
+li.menu-item {
+    padding: 15px;
+    list-style: none;
+    font-size: 16px;
+    
+    a {
+        @extend .-lightin;
+    }
+
+    .-headerFixed & a {
+        color: $color-primary;
+    }
+}

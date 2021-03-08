@@ -1,0 +1,34 @@
+/* -------------------------------------
+ # Cuarto bloque, Crear contenidos y Imgs
+ --------------------------------------- */
+.m-contentImgs {
+    background: $color-calm;
+    padding-top: $spaceSuperXl;
+    padding-bottom: $spaceSuperXl;
+
+    @include mediaQueriesMd {
+        .wp-block-column:nth-child(1) {
+            margin-bottom: $spaceSuperXl;
+        }
+    }
+
+    @include mediaQueriesMinMd {
+        padding-top: $spaceMega;
+        padding-bottom: $spaceMega;
+    }
+}
+
+.m-contentImgs__img {
+    padding-bottom: $space25;
+}
+
+.m-contentImgs__title {
+    padding-bottom: $spaceMd !important;
+    @include mediaQueriesMinMd {
+        padding-bottom: $spaceXl !important;
+    }
+}
+
+.m-contentImgs__subtitle {
+    padding-bottom: $spaceSm;
+}

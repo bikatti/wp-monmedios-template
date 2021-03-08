@@ -1,0 +1,54 @@
+/* -------------------------------------
+ # Quinto bloque, Nosotros te ayudamos
+ --------------------------------------- */
+.m-usHelp {
+    padding-top: $spaceMega;
+    padding-bottom: $spaceMega;
+
+    figure {
+        background: rgba($color-calm, .5);
+        border-radius: 4px;
+        box-shadow: $shadow;
+    }
+    
+    @include mediaQueriesMd {
+        padding-top: $spaceSuperXl;
+        padding-bottom: $spaceSuperXl;
+        
+        .wp-block-column {
+            margin-bottom: $spaceSuperXl;
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.m-usHelp__group {
+    padding-bottom: $spaceBg;
+
+
+    @include mediaQueriesMinMd {
+        padding-bottom: calc(#{$spaceXl} + #{$spaceSm});
+        p {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+    }
+}
+.m-usHelp img {
+    height: auto;
+}
+.m-usHelp h5 {
+    @include mediaQueriesMd {
+        padding-top: $space25;
+        padding-bottom: $spaceSm !important;
+    }
+
+    @include mediaQueriesMinMd {
+        padding-top: calc(#{$spaceRg} + #{$spaceXxs});
+        padding-bottom: $space0;
+    }
+}
+.wp-block-image {
+    margin: 0;
+}

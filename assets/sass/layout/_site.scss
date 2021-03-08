@@ -1,0 +1,98 @@
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+
+    &.-frontPage {
+        background: $color-happy;
+    }
+
+    // Scroll bar
+    &::-webkit-scrollbar {
+        background: transparent;
+        width: 15px;
+        height: 15px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-darkgrey;
+        &:hover {
+            background-color: $color-dark;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $color-grey;
+    }
+}
+
+dl, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+blockquote {
+    margin: 0;
+}
+
+
+/* Scrolling */
+#sixBenefits, #contentImgs, #usHelp,
+#plataform, #plataformHelp, #mercurioMag {
+    scroll-margin-top: 60px;
+
+    @include mediaQueriesMinMd {
+        scroll-margin-top: 100px;
+    }
+}
+
+::selection {
+    background-color: $color-secondary;
+}
+
+
+/* ------------------------------------
+ # Wordpress
+ -------------------------------------- */
+.wp-block-column:not(:only-child) {
+    @include mediaQueriesMd {
+        flex-basis: 100% !important;
+    }
+}
+
+.wp-block-column:not(:first-child) {
+    @include mediaQueriesMd {
+        margin-left: 0 !important;
+    }
+}
+
+.wp-block-image img {
+    width: 100%;
+    height: auto;
+}
+
+.wp-block-image {
+    @include mediaQueriesMd {
+        .alignright {
+            float: none;
+            margin: 0 auto;
+        }
+    }
+}

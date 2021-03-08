@@ -1,0 +1,37 @@
+/* -------------------------------------
+ # Tercero bloque, Seis beneficios de la revista y Imgs
+ --------------------------------------- */
+
+.m-sixBenefits {
+    margin-top: $spaceSuperXl;
+    margin-bottom: calc(#{$spaceMega} + #{$spaceXxs});
+
+    .wp-block-column:nth-child(1) {
+        margin-bottom: $space25;
+    }
+
+    @include mediaQueriesMinMd {
+        margin-top: $spaceMega;
+    }
+}
+.m-sixBenefits__title {
+    line-height: 1.2;
+    padding-bottom: $spaceXl !important;
+
+    @include mediaQueriesMinMd {
+        line-height: 1.4;
+    }
+}
+.theBody .m-sixBenefits_item {
+    margin-bottom: $spaceMega;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.m-sixBenefits_itemTitle {
+    padding-bottom: $spaceSm;
+    
+    @include mediaQueriesMd {
+        font-size: $fontSuperXs;
+    }
+}

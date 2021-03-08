@@ -1,0 +1,65 @@
+$color-primary: #2e279d;
+$color-secondary: #ffd400;
+$color-alert: #d90368;
+$color-calm: #eadeda;
+$color-happy: #68b0ab;
+
+// colors grey
+$color-lightin: #fefefe;
+$color-grey: #dddce0;
+$color-darkgrey: #bab7c1;
+$color-dark: #59585a;
+$color-black: #464547;
+
+// fonts
+$font1: 'Roboto', sans-serif;
+$font2: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+// font-size
+$fontP: 18px;
+$fontSuperXxs: 18px;
+$fontXxs: 20px;
+$fontSuperXs: 24px;
+$fontXs: 28px;
+$fontSm: 32px;
+$fontRg: 35px;
+$fontMd: 38px;
+$fontBg: 40px;
+$fontXl: 45px;
+
+// Border
+$borderBottom: 1px solid $color-grey;
+$radius: 4px;
+
+// Breakpoints
+$breakXl: 1200px;
+$breakLg: 992px;
+$breakMd: 768px;
+$breakSm: 576px;
+$breakXs: 425px;
+$breakXxs: 375px;
+$break0: 320px;
+
+// Spaces
+$spaceMega: 90px;
+$spaceSuperXl: 60px;
+$spaceXl: 50px;
+$spaceBg: 40px;
+$spaceMd: 30px;
+$space25: 25px;
+$spaceRg: 20px;
+$spaceSm: 15px;
+$spaceXs: 10px;
+$spaceXxs: 7px;
+$space0: 5px;
+
+// z-index status
+$super: 1000;
+$parent: 500;
+$child: 100;
+$friend: 50;
+$guest: 1;
+$anonymous: -1;
+
+// Shadow
+$shadow: 0 0 9px rgba($color-black, .2);

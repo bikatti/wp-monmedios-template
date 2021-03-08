@@ -1,0 +1,202 @@
+/* -------------------------------------
+ # Noveno bloque, forma de contacto
+ --------------------------------------- */
+
+.o-contact {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: calc(#{$child} + (#{$guest} * 2));
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.m-contact__model {
+    width: auto;
+    position: relative;
+    pointer-events: none;
+    z-index: calc(#{$child} + (#{$guest} * 3));
+    margin: $space0;
+    pointer-events: none;
+    max-width: none;
+
+    @include mediaQueriesMd {
+        margin: $spaceXxs !important;
+    }
+
+    @include mediaQueriesMinSm {
+        margin: $space25 auto;
+    }
+
+    @include mediaQueriesMinMd {
+        width: 660px;
+    }
+
+    @include mediaQueriesMinLg {
+        width: 992px;
+    }
+}
+.m-contact__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: $color-lightin;
+    background-clip: padding-box;
+    border-radius: $space0;
+    outline: 0;
+
+    @include mediaQueriesMinLg {
+        overflow: hidden;
+        min-height: 602px;
+        padding-left: 460px;
+    }
+}
+
+.m-contact__hook {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 460px;
+    display: none;
+    border-radius: 4px 0 0 4px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('assets/img/contact-formx.png');
+
+    @include mediaQueriesMinLg {
+        display: block;
+    }
+}
+
+.m-contact__corp {
+    text-align: center;
+    padding: $spaceRg;
+
+    .-close {
+        top: 15px;
+        right: 15px;
+        position: absolute;
+        opacity: .4;
+        float: right;
+        font-size: $fontXxs;
+        font-weight: 700;
+        line-height: 1;
+        color: $color-black;
+        text-shadow: 0 1px 0 $color-lightin;
+    }
+
+    .m-contact__logo {
+        width: 215px;
+        margin: 0 auto;
+        padding-bottom: $spaceRg;
+        img {
+            width: 100%;
+        }
+    }
+
+    @include mediaQueriesMinLg {
+        padding: $spaceMd $space25;
+        min-height: 160px;
+    }
+}
+
+.m-form__content {
+    padding: $spaceRg;
+    padding-bottom: $spaceMd;
+    background-color: lighten($color-grey, 8%);
+
+    .m-form__col {
+        margin-top: $spaceSm;
+    }
+
+    input, textarea, select {
+        display: block;
+        width: 100%;
+        padding: $space0 $spaceXxs;
+        font-size: 16px;
+        line-height: 1.5;
+        border-radius: 2px;
+        background-color: $color-lightin;
+        background-clip: padding-box;
+        border: 1px solid $color-grey;
+        color: $color-dark;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        overflow: visible;
+
+        &:focus {
+            outline: none;
+            color: $color-black;
+            border-color: $color-dark;
+        }
+    }
+
+    textarea {
+        height: 132px !important;
+    }
+
+    @include mediaQueriesMinSm {
+        input, select  {
+            height: 55px;
+        }
+    }
+}
+.m-form__contact {
+    display: block;
+    padding: $spaceSm $space25;
+    text-align: center;
+    border: 0;
+    transition: background-color .24s cubic-bezier(.215,.61,.355,1);
+    background-color: lighten($color-grey, 8%);
+    border-top: 1px solid darken($color-grey, 3%);
+    border-radius: 0 0 6px 6px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-grey;
+    }
+
+    input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    @include mediaQueriesMinLg {
+        padding-left: $space25;
+        padding-right: $space25;
+        border-bottom-left-radius: 0;
+    }
+}
+
+
+.-blur {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: calc(#{$child} + (#{$guest}));
+    opacity: .3;
+    background-color: $color-black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    margin: 0;
+    padding: $space25 $spaceBg;
+    box-shadow: 0 2px 10px $color-darkgrey;
+    background: lighten($color-grey, 8%);
+    border-width: 1px;
+    border-radius: $space0;
+}

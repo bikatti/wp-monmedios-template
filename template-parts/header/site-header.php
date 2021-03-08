@@ -7,7 +7,7 @@
  */
 
 
-if ( is_front_page() ) {
+if ( is_front_page() || is_404() ) {
     echo '<header class="o-header -frontPage">';
 } else {
     echo '<header class="o-header">';
