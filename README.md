@@ -1,7 +1,7 @@
 <h1 align="center">
 Monmedios - Wordpress template
 </h1>
-Monmedios template utilizando a Gutenberg para poder modificar el template. 
+Monmedios template utilizando a Gutenberg para poder modificar el template. Este website en Wordpress está pensado como un Landing Page.
 
 ### Pre-requisitos 📋
 
