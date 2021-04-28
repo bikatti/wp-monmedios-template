@@ -59,3 +59,10 @@ function hideShow() {
         theBody.style.overflow = 'hidden'
     }
 }
+
+console.log(`
+  💚 Desarrollado por Bikatti
+  ✨ Puedes ver más de mí en https://bikatti.com
+  🙌 También puedes ir a https://github.com/bikatti
+  
+`)
